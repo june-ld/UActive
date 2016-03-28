@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">UActive</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="skipText">Enter as Guest</string>
+
+    <string name="newUser">New User?</string>
+    <string name="registrationTitle">Please fill in your information:</string>
+    <string name="enterUsernameHint">Enter your User Name</string>
+    <string name="enterEmailHint">Enter your email</string>
+    <string name="enterPasswordHint">Enter a Password</string>
+    <string name="confirmPassHint">Confirm Password</string>
+    <string name="secQuestion">Security Question:\nIf you could wish for one free meal, what would it be?</string>
+    <string name="secResponseHint">Enter your response</string>
+    <string name="orgCampHeader">Org/Campus Challenges:</string>
+    <string name="indvHeader">Individual Challenges:</string>
+    <string name="createChallenge">Create Challenge</string>
+    <string name="title_activity_create_user">Create a Profile</string>
+    <string name="title_activity_home_screen">Home</string>
+    <string name="title_activity_create_challenge">Create a Challenge</string>
+    <string name="title_activity_challenge_details">Challenge Details</string>
+    <string name="title_activity_check_in_user">Check In</string>
+    <string name="title_activity_check_in_admin">Get Challenge Code</string>
+    <string name="title_activity_main_screen">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="levelField">Level:</string>
+    <string name="expField">Experience:</string>
+    <string name="nextField">Next Level:</string>
+    <string name="usernameField">username</string>
+    <string name="title_activity_my_orgs">My Organizations</string>
+    <string name="aPartOf">You are a part of:</string>
+    <string name="nav_myOrgs">My Orgs</string>
+    <string name="nav_goTo">Go to...</string>
+    <string name="nav_createOrg">Manage Organizations</string>
+    <string name="nav_history">History</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_logout">Log Out</string>
+    <string name="nav_exit">Exit</string>
+    <string name="nav_appGroup">Application</string>
+    <string name="title_activity_add_org">Add an Organization</string>
+    <string name="newOrgNotice">To create a new organization, you must submit a request to create one. All we require is a unique name that has not yet been used. You will receive a notification in the next few days via the email you provided.</string>
+    <string name="newOrgNameText">Organization Name:</string>
+    <string name="orgNameHint">Enter a name</string>
+    <string name="title_activity_history">History</string>
+    <string name="historyTitle">You participated in:</string>
+    <string name="orgCodeHelper">(You can get the org\'s code by tapping on each item)</string>
+    <string name="showNone">No challenges to show</string>
+</resources>

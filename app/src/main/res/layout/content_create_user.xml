@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.junelabs.june.uactive.CreateUser"
+    tools:showIn="@layout/activity_create_user">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/registrationTitle"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterUsername"
+        android:inputType="textNoSuggestions"
+        android:hint="@string/enterUsernameHint"
+        android:textColorHint="#dad3d3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterEmail"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enterEmailHint"
+        android:textColorHint="#dad3d3"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/enterPassword"
+        android:hint="@string/enterPasswordHint"
+        android:textColorHint="#dad3d3"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/confirmPassword"
+        android:hint="@string/confirmPassHint"
+        android:textColorHint="#dad3d3"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/secQuestion"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secQuestionAns"
+        android:inputType="textNoSuggestions"
+        android:hint="@string/secResponseHint"
+        android:textColorHint="#dad3d3"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationSubmit"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/submit"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onSubmit" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myOrgs"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/nav_myOrgs" />
+        <item
+            android:id="@+id/nav_goTo"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/nav_goTo" />
+
+    </group>
+
+    <item android:title="@string/nav_appGroup">
+        <menu>
+            <item
+                android:id="@+id/nav_createOrg"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="@string/nav_createOrg" />
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="@string/nav_history" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="@string/nav_tools" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_exit">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_delete"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

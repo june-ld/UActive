@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.junelabs.june.uactive.CheckInUser"
+    tools:showIn="@layout/activity_check_in_user">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkInTitle"
+        android:textColor="@color/red"
+        android:text="Event Title"
+        android:textSize="40sp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="Look for code given by Coordinator"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codeInput"
+        android:textSize="30sp"
+        android:inputType="number"
+        android:hint="Enter Code Here"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:maxLength="6" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkInRequestButton"
+        android:text="Check In"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_marginBottom="20dp"
+        android:onClick="onCheckIn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/afterCheckNotif"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have earned..."
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expGainView"
+            android:layout_gravity="center_horizontal"
+            android:text="50 XP"
+            android:textSize="40sp"
+            android:textColor="@color/red"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="go to home"
+            android:onClick="setReturn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

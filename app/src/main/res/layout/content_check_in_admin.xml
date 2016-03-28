@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.junelabs.june.uactive.CheckInAdmin"
+    tools:showIn="@layout/activity_check_in_admin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkInTitleAdmin"
+        android:textColor="@color/red"
+        android:text="Game Night"
+        android:textSize="40sp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getCodeButton"
+        android:text="Get Code"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_marginBottom="30dp"
+        android:onClick="getCodeButton"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codeVisbilityContainer"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code to give to attendees:"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/codeHolder"
+            android:layout_gravity="center_horizontal"
+            android:text="AWHS82A"
+            android:textSize="40sp"
+            android:textColor="@color/red"/>
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to home"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onGoBack"/>
+
+    </LinearLayout>
+
+</LinearLayout>
